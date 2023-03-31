@@ -14,9 +14,9 @@ contract CounterTest is Test {
         counter.setNumber(0);
     }
 
-    function test_setNumber() external {
-        counter.setNumber(10);
-        assertEq(counter.number(), 10);
+    function test_setNumber(uint16 _number) external {
+        counter.setNumber(_number);
+        assertEq(counter.number(), _number);
 
     }
 }
